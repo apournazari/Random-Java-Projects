@@ -87,13 +87,13 @@ public class MatrixMultiplier {
 	public int[][] multiplyMatrix(int[][] Matrix1, int[][] Matrix2){
 		int Result[][] = new int[Matrix1.length][Matrix2[0].length];
 			for(int row1 = 0; row1 < Matrix1.length; row1++){
-					for(int column2 =0; column2 < Matrix2[0].length; column2++){
-						for(int row2 =0; row2 < Matrix2.length; row2++){
-							Result[row1][column2] = Result[row1][column2] + (Matrix1[row1][row2] * Matrix2[row2][column2]);
-						}
+				for(int column2 =0; column2 < Matrix2[0].length; column2++){
+					for(int row2 =0; row2 < Matrix2.length; row2++){
+						Result[row1][column2] = Result[row1][column2] + (Matrix1[row1][row2] * Matrix2[row2][column2]);
 					}
+				}
 			}
-			return Result;
+		return Result;
 		}
 	
 	public void displayFirstMatrix(int[][] Matrix1){
@@ -123,6 +123,5 @@ public class MatrixMultiplier {
 		}
 		
 	}
-	
 	
 }
